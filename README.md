@@ -3,10 +3,7 @@
 [![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)
 
 > Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di  
-> <img src="./Dbimbing Logo.png" alt="Dbimbing" width="20"/>
-> Oleh: Mohammad Ilham  
-
-> Tahun: 2025
+> <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/>
 
 <h3><strong>📌 Tujuan</strong></h3>
 melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses datanya, dan menyimpannya dalam format CSV untuk dianalisis lebih lanjut.
@@ -151,3 +148,14 @@ Distribusi gaji
 Frekuensi jenis pekerjaan
 
 Saya bisa lanjut membaca dan menjelaskan bagian visualisasi / analisis jika kamu mau. Cukup katakan "lanjutkan" atau "jelaskan analisisnya". 
+
+> dibuat Oleh: Mohammad Ilham  
+
+> Tahun: 2025
+
+Ikuti dan dukung Dbimbing:
+- 🌐 Website: [dbimbing.id](https://www.dbimbing.id)
+- 📷 Instagram: [@dbimbing](https://www.instagram.com/dbimbing/)
+- ▶️ YouTube: [Dbimbing Official](https://www.youtube.com/c/Dbimbing)
+
+> Dibuat dengan semangat belajar bersama komunitas Dbimbing 🚀
