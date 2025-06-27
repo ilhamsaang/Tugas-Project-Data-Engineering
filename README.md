@@ -3,7 +3,7 @@
 [![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)
 
 > Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di  
-> <img src="./Dbimbing Logo.png" alt="Dbimbing" width="120"/>
+> <img src="./Dbimbing Logo.png" alt="Dbimbing" width="20"/>
 > Oleh: Mohammad Ilham  
 
 > Tahun: 2025
