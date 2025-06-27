@@ -2,8 +2,7 @@
 
 [![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)
 
-> Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di  
-> <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/>
+> Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
 
 <h3><strong>📌 Tujuan</strong></h3>
 melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses datanya, dan menyimpannya dalam format CSV untuk dianalisis lebih lanjut.
@@ -154,8 +153,8 @@ Saya bisa lanjut membaca dan menjelaskan bagian visualisasi / analisis jika kamu
 > Tahun: 2025
 
 Ikuti dan dukung Dbimbing:
-- 🌐 Website: [dbimbing.id](https://www.dbimbing.id)
-- 📷 Instagram: [@dbimbing](https://www.instagram.com/dbimbing/)
-- ▶️ YouTube: [Dbimbing Official](https://www.youtube.com/c/Dbimbing)
+- 🌐 Website: [dbimbing.id](https://dibimbing.id/en)
+- 📷 Instagram: [@dbimbing](https://www.instagram.com/dibimbing.id/)
+- ▶️ YouTube: [Dbimbing Official](https://www.youtube.com/@dibimbingid)
 
 > Dibuat dengan semangat belajar bersama komunitas Dbimbing 🚀
