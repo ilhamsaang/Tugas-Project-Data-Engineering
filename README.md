@@ -5,7 +5,7 @@
 [![Codecov](https://img.shields.io/badge/codecov-91%25-yellow?logo=codecov)](https://app.codecov.io/)
 [![Translated](https://img.shields.io/badge/translated-59%25-red)](https://github.com/ilhamsaang/Tugas-Data#translation-status)
 
-> Disusun untuk program DSF di **Dbimbing** ![Dbimbing Logo](./Dbimbing%20Logo.png)
+> Disusun untuk program DSF di **Dbimbing** !<img src="./images/dbimbing-logo.png" alt="Dbimbing Logo" width="100"/>
 > Oleh: Mohammad Ilham  
 > Tahun: 2025
 
