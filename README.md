@@ -1,17 +1,9 @@
 <h1><strong>Web Scraping & Data Lowongan Kerja di Jobstreet</strong></h1>
 
-[![Runboat](https://img.shields.io/badge/runboat-Try_me-purple)](https://runboat.example.com)
+[![Runboat](https://img.shields.io/badge/runboat-Try_me-purple)](https://runboat.example.com)[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Codecov](https://img.shields.io/badge/codecov-91%25-yellow?logo=codecov)](https://app.codecov.io/)[![Translated](https://img.shields.io/badge/translated-59%25-red)](https://github.com/ilhamsaang/Tugas-Data#translation-status)
 
-[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)
-
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)
-
-[![Codecov](https://img.shields.io/badge/codecov-91%25-yellow?logo=codecov)](https://app.codecov.io/)
-
-[![Translated](https://img.shields.io/badge/translated-59%25-red)](https://github.com/ilhamsaang/Tugas-Data#translation-status)
-
-> Disusun untuk program DSF di **Dbimbing** !<img src="./images/dbimbing-logo.png" alt="Dbimbing Logo" width="100"/>
-
+> Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di  
+> <img src="./images/dbimbing-logo.png" alt="Dbimbing" width="120"/>
 > Oleh: Mohammad Ilham  
 
 > Tahun: 2025
