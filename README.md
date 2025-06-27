@@ -9,24 +9,27 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 <h3><strong>🧰 1. Instalasi dan Import Library</strong></h3>
 
-%pip install selenium beautifulsoup4 pandas webdriver-manager
-!apt-get update
-!apt-get install chromium-browser
+> %pip install selenium beautifulsoup4 pandas webdriver-manager
+
+> !apt-get update
+
+> !apt-get install chromium-browser
 
 <strong>✨ Tujuan:</strong>
 
 Menginstal library yang diperlukan untuk scraping:
 
-selenium: Mengontrol browser secara otomatis
+- selenium: Mengontrol browser secara otomatis
 
-beautifulsoup4: Mengambil dan memproses data HTML
+- beautifulsoup4: Mengambil dan memproses data HTML
 
-pandas: Untuk menyimpan dan mengolah data
+- pandas: Untuk menyimpan dan mengolah data
 
-webdriver-manager: Memudahkan setup driver browser
+- webdriver-manager: Memudahkan setup driver browser
 
 <h3><strong>📚 2. Import Modul Python</strong></h3>
 
+<pre lang="markdown">
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -37,6 +40,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import time, os, re
+</pre>
 
 <strong>✨ Tujuan:</strong>
 
@@ -52,6 +56,7 @@ Fungsi tambahan seperti regex (re), delay waktu (time), dan file (os)
 
 <h3><strong>🧩 3. Fungsi: Generate Filename</strong></h3>
 
+<pre lang="markdown">
 def generate_unique_filename(base_name, ext=".csv"):
     i = 1
     filename = f"{base_name}{ext}"
@@ -59,26 +64,28 @@ def generate_unique_filename(base_name, ext=".csv"):
         filename = f"{base_name}({i}){ext}"
         i += 1
     return filename
-
+</pre>
 <strong>✨ Tujuan:</strong>
 
 Agar nama file CSV tidak menimpa file yang sudah ada, fungsi ini akan menambahkan angka di belakang jika nama file sudah digunakan.
 
 <h3><strong>⏳ 4. Fungsi: Konversi Waktu Posting</strong></h3>
 
+<pre lang="markdown">
 def convert_posted_date_to_days(posted_text):
     ...
+</pre>
 <strong>✨ Tujuan:</strong>
 Mengubah informasi waktu seperti "2 hari yang lalu" atau "1 bulan yang lalu" menjadi angka (int) berupa jumlah hari.
 
 <h3><strong>🌐 5. Setup Selenium dan Masukkan Keyword</strong></h3>
-python
-Salin
-Edit
+
+<pre lang="markdown">
 options = Options()
 options.add_argument("--headless")  # Tanpa buka browser
 ...
 driver = webdriver.Chrome(options=options)
+</pre>
 
 <strong>✨ Tujuan:</strong>
 
@@ -88,11 +95,13 @@ Membuka browser otomatis dengan webdriver.Chrome
 
 <h3><strong>🔍 6. Scraping Data Lowongan Kerja</strong></h3>
 
+<pre lang="markdown">
 base_url = f"https://www.jobstreet.co.id/id/data-analyst-jobs"
 ...
 driver.get(url)
 ...
 soup = BeautifulSoup(driver.page_source, "html.parser")
+</pre>
 
 <strong>✨ Tujuan:</strong>
 
@@ -120,9 +129,11 @@ Umur lowongan (berapa hari yang lalu)
 
 <h3><strong>💾 7. Menyimpan Data ke CSV</strong></h3>
 
+<pre lang="markdown">
 filename = generate_unique_filename("lowongan_jobstreet_lengkap")
 df = pd.DataFrame(jobs)
 df.to_csv(filename, index=False, encoding='utf-8-sig')
+</pre>
 
 <strong>✨ Tujuan:</strong>
 
@@ -132,7 +143,7 @@ Menyimpan hasil scraping ke file .csv untuk analisis lebih lanjut
 
 <h3><strong>📥 8. Membaca Data CSV</strong></h3>
 
-data = pd.read_csv('lowongan_jobstreet_lengkap.csv', engine='python')
+> data = pd.read_csv('lowongan_jobstreet_lengkap.csv', engine='python')
 
 <strong>✨ Tujuan:</strong>
 
