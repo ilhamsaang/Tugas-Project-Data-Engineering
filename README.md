@@ -1,168 +1,151 @@
-<h1><strong>Web Scraping & Data Lowongan Kerja di Jobstreet</strong></h1>
+<h1><strong>Tugas Data  Engineer: Web Scraping & Data Lowongan Kerja di Jobstreet</strong></h1>
 
-[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Documentation](https://img.shields.io/badge/Documentation?logo=github)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)
 
 > Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
+
+> __dibuat Oleh: Mohammad Ilham__
+
+> __Tahun: 2025__
 
 <h3><strong>📌 Tujuan</strong></h3>
 melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses datanya, dan menyimpannya dalam format CSV untuk dianalisis lebih lanjut.
 
-<h3><strong>🧰 1. Instalasi dan Import Library</strong></h3>
+<h3><strong> 🛠️ Pembuatan </strong></h3>
 
-> %pip install selenium beautifulsoup4 pandas webdriver-manager
+1. Melakukan Check Element pada Website untuk melakukan Data Scraping
 
-> !apt-get update
+<img src="./Check Element.png" alt="Hasil" width="50"/>
 
-> !apt-get install chromium-browser
+2. Memutuskan data apa saja yang akan diambil dan apa saja elementnya
 
-<strong>✨ Tujuan:</strong>
+3. mencari tau Library apa saja yang diperlukan berdasarkan element yang ada dan data yang ingin diambil
 
-Menginstal library yang diperlukan untuk scraping:
+4. mencoba melakukan data scraping dan menyimpannya sebagai CSV
 
-- selenium: Mengontrol browser secara otomatis
+5. mengolah data yang berhasil didapatkan
 
-- beautifulsoup4: Mengambil dan memproses data HTML
+6. Membuat Dokumentasi pada dan Repositori pada Github
 
-- pandas: Untuk menyimpan dan mengolah data
 
-- webdriver-manager: Memudahkan setup driver browser
+## 👨‍💻 Peran dalam Proyek
+- **Data Engineer**: Menangani pembersihan, parsing, dan transformasi data mentah dari sumber CSV.
+- **Data Analyst**: Melakukan analisis eksploratif, statistik deskriptif, dan visualisasi lowongan pekerjaan berbasis lokasi, tipe, dan kisaran gaji.
 
-<h3><strong>📚 2. Import Modul Python</strong></h3>
+## 🗂️ Dataset
+**Nama file**: `lowongan_jobstreet_lengkap.csv`  
+**Jumlah data**: 64 baris  
+**Sumber**: JobStreet (scraped/exported data)
 
-<pre lang="markdown">
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from bs4 import BeautifulSoup
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import time, os, re
-</pre>
+### 🔑 Kolom Penting
+| Kolom | Deskripsi |
+|-------|-----------|
+| `Job Position` | Nama posisi pekerjaan |
+| `Company` | Nama perusahaan |
+| `Location` | Lokasi pekerjaan (misal: Jakarta, Surabaya) |
+| `Salary` | Informasi gaji (bisa kosong) |
+| `Job Type` | Jenis pekerjaan (Full time, Kontrak) |
+| `Days_Since_Posted` | Hari sejak posting |
+| `Link` | Tautan ke detail pekerjaan |
+| `Description` | Deskripsi rinci pekerjaan (multiline) |
 
-<strong>✨ Tujuan:</strong>
+## 🛠️ Data Engineering Process
 
-Semua library di atas digunakan untuk:
+### 1. Parsing CSV dengan format non-standar
+- Menggunakan delimiter `;`
+- Menangani kolom deskripsi multiline
+- Memperbaiki encoding (UTF-8 BOM)
+- Mengatasi inkonsistensi jumlah kolom dan missing values
 
-Mengakses dan membaca HTML
+### 2. Pembersihan dan Transformasi
+- Drop baris duplikat
+- Normalisasi kolom `Salary` ke dalam range numerik (jika memungkinkan)
+- Ekstraksi `Provinsi` dari kolom `Location` untuk agregasi data wilayah
 
-Scraping dinamis menggunakan Selenium
+## 📈 Data Analysis Process
 
-Analisis data dan visualisasi dengan pandas, matplotlib, seaborn
+### Statistik Deskriptif
+- Job Type paling umum: **Full time** (84%)
+- Lokasi terbanyak: **Jakarta Selatan**
+- Posisi paling sering dicari: **Data Analyst**
 
-Fungsi tambahan seperti regex (re), delay waktu (time), dan file (os)
+### Analisis Visual (dalam notebook)
+- Bar chart jumlah lowongan per provinsi
+- Pie chart jenis pekerjaan
+- Jumlah data gaji tersedia hanya **15 dari 64**
 
-<h3><strong>🧩 3. Fungsi: Generate Filename</strong></h3>
+## 💡 Insight & Rekomendasi
+- Perluasan scraping untuk memperoleh lebih banyak data `Salary` yang valid
+- Data `Description` bisa diolah dengan NLP untuk keyword extraction
+- Perusahaan bisa fokus memposting di wilayah-wilayah dengan demand tinggi seperti Jakarta Selatan
 
-<pre lang="markdown">
-def generate_unique_filename(base_name, ext=".csv"):
-    i = 1
-    filename = f"{base_name}{ext}"
-    while os.path.exists(filename):
-        filename = f"{base_name}({i}){ext}"
-        i += 1
-    return filename
-</pre>
-<strong>✨ Tujuan:</strong>
+## 🧰 Tools
+- Python (Pandas, Matplotlib, Seaborn)
+- Jupyter Notebook
 
-Agar nama file CSV tidak menimpa file yang sudah ada, fungsi ini akan menambahkan angka di belakang jika nama file sudah digunakan.
+<h3><strong> 📊 Hasil Data </strong></h3>
 
-<h3><strong>⏳ 4. Fungsi: Konversi Waktu Posting</strong></h3>
+<img src="./Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, 10 perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil" width="80"/>
 
-<pre lang="markdown">
-def convert_posted_date_to_days(posted_text):
-    ...
-</pre>
-<strong>✨ Tujuan:</strong>
-Mengubah informasi waktu seperti "2 hari yang lalu" atau "1 bulan yang lalu" menjadi angka (int) berupa jumlah hari.
+💼 1. Jumlah Lowongan per Provinsi
+Jakarta Raya mendominasi dengan jumlah lowongan kerja terbanyak.
 
-<h3><strong>🌐 5. Setup Selenium dan Masukkan Keyword</strong></h3>
+Diikuti oleh Banten, Jawa Barat, Jawa Timur, dan Sumatera Utara.
 
-<pre lang="markdown">
-options = Options()
-options.add_argument("--headless")  # Tanpa buka browser
-...
-driver = webdriver.Chrome(options=options)
-</pre>
+Provinsi seperti Kalimantan Timur dan Sulawesi Selatan punya jumlah lowongan yang jauh lebih sedikit.
 
-<strong>✨ Tujuan:</strong>
+📌 Interpretasi:
 
-Mengatur agar browser berjalan di background
+> Konsentrasi lowongan sangat terpusat di wilayah Jabodetabek dan provinsi padat penduduk. Daerah luar Jawa memiliki sedikit lowongan.
 
-Membuka browser otomatis dengan webdriver.Chrome
+🧰 2. Distribusi Jenis Pekerjaan
+Hampir seluruh lowongan adalah Full time.
 
-<h3><strong>🔍 6. Scraping Data Lowongan Kerja</strong></h3>
+Sedikit yang termasuk kategori Kontrak/Temporer atau Kasual.
 
-<pre lang="markdown">
-base_url = f"https://www.jobstreet.co.id/id/data-analyst-jobs"
-...
-driver.get(url)
-...
-soup = BeautifulSoup(driver.page_source, "html.parser")
-</pre>
+📌 Interpretasi:
 
-<strong>✨ Tujuan:</strong>
+> Sebagian besar perusahaan menawarkan pekerjaan penuh waktu, menandakan kebutuhan tenaga kerja jangka panjang.
 
-Mengakses halaman pencarian kerja
+💰 3. Jumlah Data Gaji yang Tersedia per Provinsi
+Lagi-lagi, Jakarta Raya dan Banten menempati posisi teratas untuk jumlah data gaji yang diungkapkan.
 
-Menggunakan BeautifulSoup untuk membaca dan ambil data dari HTML
+Provinsi lainnya menunjukkan lebih sedikit transparansi soal gaji.
 
-<strong>✨ 🔎 Data yang diambil:</strong>
+📌 Interpretasi:
 
-Posisi pekerjaan
+> Wilayah-wilayah industri utama lebih cenderung mencantumkan gaji secara terbuka dibanding daerah lainnya.
 
-Nama perusahaan
+🏢 4. 10 Perusahaan dengan Data Gaji Terbanyak
+Perusahaan seperti:
 
-Lokasi kerja
+PT Depoguna Bangunan Online
 
-Gaji (jika tersedia)
+PT Bussan Auto Finance (BAF)
 
-Tipe pekerjaan (penuh waktu, kontrak, dll.)
+PT Daya's Rekrutmen, dll.
 
-Deskripsi pekerjaan
+Adalah yang paling transparan dalam mencantumkan gaji.
 
-Link ke lowongan
+📌 Interpretasi:
 
-Umur lowongan (berapa hari yang lalu)
+> Perusahaan-perusahaan ini bisa dianggap lebih terbuka atau menarik bagi pencari kerja yang mengutamakan kejelasan kompensasi.
 
-<h3><strong>💾 7. Menyimpan Data ke CSV</strong></h3>
+🏆 5. 10 Perusahaan dengan Lowongan Terbanyak
+Perusahaan yang paling aktif membuka lowongan adalah:
 
-<pre lang="markdown">
-filename = generate_unique_filename("lowongan_jobstreet_lengkap")
-df = pd.DataFrame(jobs)
-df.to_csv(filename, index=False, encoding='utf-8-sig')
-</pre>
+PT Depoguna Bangunan Online
 
-<strong>✨ Tujuan:</strong>
+PT Bussan Auto Finance (BAF)
 
-Mengubah list jobs menjadi DataFrame
+PT Daya's Rekrutmen
 
-Menyimpan hasil scraping ke file .csv untuk analisis lebih lanjut
+Banyak dari mereka juga muncul di grafik perusahaan dengan data gaji terbanyak.
 
-<h3><strong>📥 8. Membaca Data CSV</strong></h3>
+📌 Interpretasi:
 
-> data = pd.read_csv('lowongan_jobstreet_lengkap.csv', engine='python')
+> Perusahaan yang banyak membuka lowongan juga cenderung lebih terbuka soal gaji, ini positif bagi pencari kerja.
 
-<strong>✨ Tujuan:</strong>
-
-Membaca kembali data yang sudah disimpan untuk dilakukan analisis statistik atau visualisasi
-
-🖼️ Penjelasan Gambar (Jika Ada)
-Jika terdapat grafik atau visualisasi di cell berikutnya (belum dibaca), grafik biasanya akan menunjukkan:
-
-Jumlah lowongan per lokasi
-
-Distribusi gaji
-
-Frekuensi jenis pekerjaan
-
-Saya bisa lanjut membaca dan menjelaskan bagian visualisasi / analisis jika kamu mau. Cukup katakan "lanjutkan" atau "jelaskan analisisnya". 
-
-> dibuat Oleh: Mohammad Ilham  
-
-> Tahun: 2025
 
 Ikuti dan dukung Dbimbing:
 - 🌐 Website: [dbimbing.id](https://dibimbing.id/en)
