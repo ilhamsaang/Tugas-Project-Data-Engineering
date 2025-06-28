@@ -1,6 +1,6 @@
 <h1><strong>Tugas Data  Engineer: Web Scraping & Data Lowongan Kerja di Jobstreet</strong></h1>
 
-[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Documentation](https://img.shields.io/badge/Documentation-brightblue?logo=github)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions) [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions) [![Documentation](https://img.shields.io/badge/Documentation-file-brightblue?logo=github)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)
 
 > Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
 
@@ -80,12 +80,12 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 - Perusahaan bisa fokus memposting di wilayah-wilayah dengan demand tinggi seperti Jakarta Selatan
 
 ## 🧰 Tools
-- Python (Pandas, Matplotlib, Seaborn)
-- Jupyter Notebook
+- Python (Pandas, Matplotlib, Seaborn, Selenium, matplotlib, BeautifulSoup)
+- Visual Studio Code
 
 <h3><strong> 📊 Hasil Data </strong></h3>
 
-<img src="./Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, 10 perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil" width="80"/>
+<img src="./Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, 10 perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil" width="300"/>
 
 💼 1. Jumlah Lowongan per Provinsi
 Jakarta Raya mendominasi dengan jumlah lowongan kerja terbanyak.
