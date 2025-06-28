@@ -15,7 +15,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 1. Melakukan Check Element pada Website untuk melakukan Data Scraping
 
-<img src="./Check Element.png" alt="Hasil" width="50"/>
+<img src="./Check Element.png" alt="Hasil" width="200"/>
 
 2. Memutuskan data apa saja yang akan diambil dan apa saja elementnya
 
