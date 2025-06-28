@@ -1,6 +1,6 @@
 <h1><strong>Tugas Data  Engineer: Web Scraping & Data Lowongan Kerja di Jobstreet</strong></h1>
 
-[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Documentation](https://img.shields.io/badge/Documentation?logo=github)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)[![Documentation](https://img.shields.io/badge/Documentation-brightblue?logo=github)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)
 
 > Disusun untuk program pelatihan **Data Science Fundamental (DSF)** di <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
 
