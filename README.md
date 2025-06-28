@@ -1,6 +1,6 @@
 <h1><strong>Tugas Data  Engineer: Web Scraping & Data Lowongan Kerja di Jobstreet</strong></h1>
 
-[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)   [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)    [![Documentation](https://img.shields.io/badge/Documentation-file-brightblue?logo=github)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)   [![Dibimbing](https://img.shields.io/badge/Dibimbing-Online%20Bootcamp-Green?logo=data:image/png;base64,<BASE64_ICON>&style=for-the-badge)](https://dibimbing.id/en)   [![Jobstreet](https://img.shields.io/badge/Jobstreet-Job%20Portal-Purple?logo=data:image/png;base64,<BASE64_ICON>&style=for-the-badge)](https://id.jobstreet.com/)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)   [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)    [![Documentation](https://img.shields.io/badge/Documentation-file-brightblue?logo=readthedocs)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)   [![Dibimbing](https://img.shields.io/badge/Dibimbing-Online%20Bootcamp-Green?logo=academia)](https://dibimbing.id/en)   [![Jobstreet](https://img.shields.io/badge/Jobstreet-Job%20Portal-Purple?logo=briefcase)](https://id.jobstreet.com/)
 
 > Disusun untuk program pelatihan **Data Science Fundamental (DSF) : Data Engineer** di <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
 
@@ -9,7 +9,7 @@
 > __Tahun: 2025__
 
 Terima kasih kepada:
-<img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
+<img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en) &
 <img src="./Jobstreet logo.jpg" alt="Jobstreet" width="10"/> [Jobstreet](https://id.jobstreet.com/)
 
 <h3><strong>📌 Tujuan</strong></h3>
