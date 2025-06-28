@@ -10,7 +10,7 @@
 
 Terima kasih kepada:
 <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en) &
-<img src="./Jobstreet logo.jpg" alt="Jobstreet" width="20"/> [Jobstreet](https://id.jobstreet.com/)
+<img src="./Jobstreet logo.jpg" alt="Jobstreet" width="15"/> [Jobstreet](https://id.jobstreet.com/)
 
 <h3><strong>📌 Tujuan</strong></h3>
 melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses datanya, dan menyimpannya dalam format CSV untuk dianalisis lebih lanjut.
