@@ -86,6 +86,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 ## 🧰 Tools
 - Python (Pandas, Matplotlib, Seaborn, Selenium, matplotlib, BeautifulSoup)
 - Visual Studio Code
+- Jupyter Notebook
 
 <h3><strong> 📊 Hasil Data </strong></h3>
 
