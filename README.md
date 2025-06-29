@@ -2,15 +2,15 @@
 
 [![Pre-commit](https://img.shields.io/badge/pre--commit-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)   [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?logo=github)](https://github.com/ilhamsaang/Tugas-Data/actions)    [![Documentation](https://img.shields.io/badge/Documentation-file-brightblue?logo=readthedocs)](https://docs.google.com/document/d/16DCU0SObi8ZhqjiYe0Ir8vifVu_H1YO9ENuhEdEjubw/edit?usp=sharing)   [![Dibimbing](https://img.shields.io/badge/Dibimbing-Online%20Bootcamp-Green?logo=bookstack&logoColor=white)](https://dibimbing.id/en)   [![Jobstreet](https://img.shields.io/badge/Jobstreet-Job%20Portal-Purple?logo=workplace&logoColor=white)](https://id.jobstreet.com/)
 
-> Disusun untuk program pelatihan **Data Science Fundamental (DSF) : Data Engineer** di <img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
+> Disusun untuk program pelatihan **Data Science Fundamental (DSF) : Data Engineer** di <img src="./asset/Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en)
 
 > __dibuat Oleh: Mohammad Ilham__
 
 > __Tahun: 2025__
 
 Terima kasih kepada:
-<img src="./Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en) &
-<img src="./Jobstreet logo.jpg" alt="Jobstreet" width="15"/> [Jobstreet](https://id.jobstreet.com/)
+<img src="./asset/Dbimbing Logo.png" alt="Dbimbing" width="10"/> [DBimbing](https://dibimbing.id/en) &
+<img src="./asset/Jobstreet logo.jpg" alt="Jobstreet" width="15"/> [Jobstreet](https://id.jobstreet.com/)
 
 <h3><strong>📌 Tujuan</strong></h3>
 melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses datanya, dan menyimpannya dalam format CSV untuk dianalisis lebih lanjut.
@@ -19,7 +19,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 1. Melakukan Check Element pada Website untuk melakukan Data Scraping
 
-<img src="./Check Element.png" alt="Hasil" width="200"/>
+<img src="./asset/Check Element.png" alt="Hasil" width="200"/>
 
 2. Memutuskan data apa saja yang akan diambil dan apa saja elementnya
 
@@ -37,7 +37,8 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 - **Data Analyst**: Melakukan analisis eksploratif, statistik deskriptif, dan visualisasi lowongan pekerjaan berbasis lokasi, tipe, dan kisaran gaji.
 
 ## 🗂️ Hasil Data Scraping
-**Nama file**: `lowongan_jobstreet_lengkap.csv`  
+**Nama file**: `lowongan_jobstreet_lengkap_20250628_234606` 
+**Waktu pengambilan data**: pada tanggal 28 Juni 2025, Pukul 23:46:06 WIB
 **Jumlah data**: 64 baris  
 **Sumber**: JobStreet (scraped/exported data)
 
@@ -71,7 +72,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 ### Statistik Deskriptif
 - Job Type paling umum: **Full time** (84%)
 - Lokasi terbanyak: **Jakarta Selatan**
-- Posisi paling sering dicari: **Data Analyst**
+
 
 ### Analisis Visual (dalam notebook)
 - Bar chart jumlah lowongan per provinsi
@@ -90,7 +91,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 <h3><strong> 📊 Hasil Data </strong></h3>
 
-<img src="./Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, 10 perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil" width="300"/>
+<img src="./asset/Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, 13 perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil" width="300"/>
 
 💼 1. Jumlah Lowongan per Provinsi
 Jakarta Raya mendominasi dengan jumlah lowongan kerja terbanyak.
@@ -121,16 +122,9 @@ Provinsi lainnya menunjukkan lebih sedikit transparansi soal gaji.
 
 > Wilayah-wilayah industri utama lebih cenderung mencantumkan gaji secara terbuka dibanding daerah lainnya.
 
-🏢 4. 10 Perusahaan dengan Data Gaji Terbanyak
-Perusahaan seperti:
+🏢 4. Perusahaan dengan Data Gaji 
 
-PT Depoguna Bangunan Online
-
-PT Bussan Auto Finance (BAF)
-
-PT Daya's Rekrutmen, dll.
-
-Adalah yang paling transparan dalam mencantumkan gaji.
+>  Banyak perusahaan belum mencantumkan data gaji
 
 📌 Interpretasi:
 
