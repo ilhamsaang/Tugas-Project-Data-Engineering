@@ -38,8 +38,11 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 ## 🗂️ Hasil Data Scraping
 **Nama file**: `lowongan_jobstreet_lengkap_20250628_234606` 
+
 **Waktu pengambilan data**: pada tanggal 28 Juni 2025, Pukul 23:46:06 WIB
-**Jumlah data**: 64 baris  
+
+**Jumlah data**: 64 baris 
+
 **Sumber**: JobStreet (scraped/exported data)
 
 ### 🔑 Kolom Penting
