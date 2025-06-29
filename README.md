@@ -124,7 +124,7 @@ Provinsi lainnya menunjukkan lebih sedikit transparansi soal gaji.
 
 🏢 4. Perusahaan dengan Data Gaji 
 
->  Banyak perusahaan belum mencantumkan data gaji
+>  Banyak perusahaan belum mencantumkan data gaji sebab data hanya menunjukan ada 13 perusahaan saja dengan masing masing 1 lowongan yang memiliki data gaji
 
 📌 Interpretasi:
 
