@@ -17,19 +17,20 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 <h3><strong> 🛠️ Pembuatan </strong></h3>
 
-1. Melakukan Check Element pada Website untuk melakukan Data Scraping
-
-<img src="./asset/Check Element.png" alt="check element" width="200"/>
+1. Memahami website dan data apa saja yang tersedia
 
 2. Memutuskan data apa saja yang akan diambil dan apa saja elementnya
 
-3. mencari tau Library apa saja yang diperlukan berdasarkan element yang ada dan data yang ingin diambil
+3. Melakukan Check Element pada Website untuk melakukan Data Scraping
+<img src="./asset/Check Element.png" alt="check element" width="200"/>
 
-4. mencoba melakukan data scraping dan menyimpannya sebagai CSV
+4. mencari tau Library apa saja yang diperlukan berdasarkan element yang ada dan data yang ingin diambil
 
-5. mengolah data yang berhasil didapatkan
+5. mencoba melakukan data scraping dan menyimpannya sebagai CSV
 
-6. Membuat Dokumentasi pada dan Repositori pada Github
+6. mengolah data yang berhasil didapatkan
+
+7. Membuat Dokumentasi pada dan Repositori pada Github
 
 
 ## 👨‍💻 Peran dalam Proyek
