@@ -19,7 +19,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 1. Melakukan Check Element pada Website untuk melakukan Data Scraping
 
-<img src="./asset/Check Element.png" alt="Hasil" width="200"/>
+<img src="./asset/Check Element.png" alt="check element" width="200"/>
 
 2. Memutuskan data apa saja yang akan diambil dan apa saja elementnya
 
@@ -37,9 +37,9 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 - **Data Analyst**: Melakukan analisis eksploratif, statistik deskriptif, dan visualisasi lowongan pekerjaan berbasis lokasi, tipe, dan kisaran gaji.
 
 ## 🗂️ Hasil Data Scraping
-**Nama file**: `lowongan_jobstreet_lengkap_20250628_234606` 
+**Nama file**: `lowongan_jobstreet_lengkap_20250630_120733` 
 
-**Waktu pengambilan data**: pada tanggal 28 Juni 2025, Pukul 23:46:06 WIB
+**Waktu pengambilan data**: pada tanggal 30 Juni 2025, Pukul 12:07:33 WIB
 
 **Jumlah data**: 64 baris 
 
@@ -50,7 +50,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 |-------|-----------|
 | `Job Position` | Nama posisi pekerjaan |
 | `Company` | Nama perusahaan |
-| `Location` | Lokasi pekerjaan (misal: Jakarta, Surabaya) |
+| `Location` | Lokasi pekerjaan (misal: Surabaya, Jawa Timur) |
 | `Salary` | Informasi gaji (bisa kosong) |
 | `Job Type` | Jenis pekerjaan (Full time, Kontrak) |
 | `Days_Since_Posted` | Hari sejak posting |
@@ -60,7 +60,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 ## 🛠️ Data Engineering Process
 
 ### 1. Parsing CSV dengan format non-standar
-- Menggunakan delimiter `;`
+- Menggunakan delimiter ';'
 - Menangani kolom deskripsi multiline
 - Memperbaiki encoding (UTF-8 BOM)
 - Mengatasi inkonsistensi jumlah kolom dan missing values
@@ -73,14 +73,14 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 ## 📈 Data Analysis Process
 
 ### Statistik Deskriptif
-- Job Type paling umum: **Full time** (84%)
+- Job Type paling umum: **Full time** (79,68%)
 - Lokasi terbanyak: **Jakarta Selatan**
 
 
 ### Analisis Visual (dalam notebook)
 - Bar chart jumlah lowongan per provinsi
 - Pie chart jenis pekerjaan
-- Jumlah data gaji tersedia hanya **15 dari 64**
+- Jumlah data gaji tersedia hanya **18 dari 64**
 
 ## 💡 Insight & Rekomendasi
 - Perluasan scraping untuk memperoleh lebih banyak data `Salary` yang valid
@@ -94,12 +94,14 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 <h3><strong> 📊 Hasil Data </strong></h3>
 
-<img src="./asset/Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, 13 perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil" width="300"/>
+<img src="./asset/Jumlah Lowongan yang dibuka 1 bulan ini.png" alt="Hasil1" width="300"/>
+
+<img src="./asset/Jumlah Lowongan Per Provinsi, Distribusi Jenis Pekerjaan, Jumlah Data gaji yang tersedia per provinsi, perusahaan dengan data gaji, 10 perusahaan dengan lowongan terbanyak.png" alt="Hasil2" width="300"/>
 
 💼 1. Jumlah Lowongan per Provinsi
 Jakarta Raya mendominasi dengan jumlah lowongan kerja terbanyak.
 
-Diikuti oleh Banten, Jawa Barat, Jawa Timur, dan Sumatera Utara.
+Diikuti oleh Banten, Jawa Timur, Jawa Barat, dan Sumatera Utara.
 
 Provinsi seperti Kalimantan Timur dan Sulawesi Selatan punya jumlah lowongan yang jauh lebih sedikit.
 
@@ -127,7 +129,7 @@ Provinsi lainnya menunjukkan lebih sedikit transparansi soal gaji.
 
 🏢 4. Perusahaan dengan Data Gaji 
 
->  Banyak perusahaan belum mencantumkan data gaji sebab data hanya menunjukan ada 13 perusahaan saja dengan masing masing 1 lowongan yang memiliki data gaji
+>  Banyak perusahaan belum mencantumkan data gaji sebab data hanya menunjukan ada 1 perusahaan dengan 2 lowongan menggunakan data gaji dan sisanya hanya ada 16 perusahaan saja dengan masing masing 1 lowongan yang memiliki data gaji
 
 📌 Interpretasi:
 
@@ -140,9 +142,7 @@ PT Depoguna Bangunan Online
 
 PT Bussan Auto Finance (BAF)
 
-PT Daya's Rekrutmen
-
-Banyak dari mereka juga muncul di grafik perusahaan dengan data gaji terbanyak.
+PT Propan Raya Industrial Coating Chemical
 
 📌 Interpretasi:
 
