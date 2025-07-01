@@ -30,7 +30,7 @@ melakukan web scraping lowongan pekerjaan dari situs JobStreet.co.id, memproses 
 
 6. mengolah data yang berhasil didapatkan
 
-7. Membuat Dokumentasi pada dan Repositori pada Github
+7. Membuat Dokumentasi dan Repositori pada Github
 
 
 ## 👨‍💻 Peran dalam Proyek
